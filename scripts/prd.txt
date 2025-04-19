@@ -1,0 +1,138 @@
+2. Features & Functionalities
+
+2.1 User Registration & Login System
+• Users register using OTP-based Phone Verification.
+• Email ID field is optional at registration.
+• Users can log in using either Phone Number or Email ID.
+• Users set a password during registration, which will be the login password.
+• After registration, users can optionally update their Email ID:
+o Email verification via OTP sent to email.
+o After verification, Email ID can be used as a login ID.
+• Users who do not enter a Referral ID are automatically mapped under Admin.
+• Admin can later manually reassign these free or paid members under any Paid Member.
+
+2.2 Paid Membership & Payment System
+• Users pay a one-time membership fee of ₹3,200 to become a Paid Member.
+• Payment Gateway: Secure online payment via integrated merchant gateway.
+• Successful payment activates:
+o Generation of a Unique Member ID (also acts as Referral ID).
+o Access to exclusive discounts and referral eligibility.
+• Users receive a Shopping Card displaying:
+o Member ID / Referral ID
+o Full Name
+o Phone Number
+• The Shopping Card is downloadable and can be shown at partnered stores for discounts.
+
+2.3 Referral System & Earnings (Backend Managed Only)
+• Each Paid Member receives a unique Referral Link & Referral ID.
+• Unlimited direct referrals allowed.
+• Referral Tree Visibility:
+o Direct Referrals (Level 1): All referred users' names visible.
+o Level 2 onwards: Only total referral numbers per level displayed.
+• Referral Bonus structure (calculated in backend, hidden from users):
+Level Referral Bonus %
+Level 1 5%
+Level 2 3%
+Level 3 2%
+Level 4 1%
+Level 5 1%
+• Referral Bonus calculations handled in backend only and not visible publicly.
+
+2.4 Earnings & Withdrawal System
+• Users track total earnings (Referral Bonuses) in real-time via dashboard.
+• Withdrawal requests allowed only after earnings reach a minimum of ₹500.
+• Withdrawal Methods Available:
+o Bank Transfer
+o PhonePe
+• Manual Admin Approval & Processing (Within 24 to 48 hours):
+o Admin enters amount processed and selects payment method used:
+▪ Bank Transfer
+▪ PhonePe
+▪ Google Pay
+▪ Paid in Cash
+o Admin marks withdrawal as "Payment Processed".
+o Processed amount deducted from user's total available balance.
+o Updated balance shown clearly to users.
+o Transaction recorded in transaction history for both Admin and User.
+
+2.5 Membership Benefits & Discounts
+• Exclusive discounts at partnered shops across various categories:
+o Gold Jewelry
+o Groceries
+o Clothing & Apparel
+o Home Appliances
+• Members use their Shopping Card at partnered stores to redeem discounts.
+• Homepage showcases these benefits through an engaging carousel/grid view.
+• Clear CTA: "See All Membership Benefits," linking to a dedicated detailed page.
+
+2.6 Business Owners & Vendor Partnership Section
+• A dedicated section and page targeting Shop Owners, Business Owners, Vendors.
+• Clearly explains the benefits of partnering with Vehash Global Marketing:
+o Increased footfall by referrals of Vehash Global's Paid Members.
+o More customer visibility & increased business sales.
+• Easy form submission for vendors interested in partnering.
+
+2.7 Website Navigation & User Experience
+• Public Pages (Before Login):
+o Home Page: Introduction, key benefits, CTA for joining.
+o How It Works: Clear guide on registration, membership, & referral mechanism.
+o Membership Benefits: Details of discounts & categories.
+o Vendor Partnership (Dedicated section/page).
+o Contact Us (For user support and inquiries).
+• Fully responsive design (Mobile optimized).
+• Sticky Navigation Bar ensuring easy access to key pages & actions.
+
+2.8 Payment & Transaction History
+• User Dashboard:
+o Clear view of available balance.
+o Detailed record of past withdrawals and transaction history.
+o Withdrawal request statuses (Pending, Processed, Rejected).
+• Admin Dashboard:
+o Comprehensive record of all processed withdrawals.
+o Detailed transactions (Amount, Date, Payment Method, User details).
+o Ability to filter transactions by user, date, payment status, and method.
+
+2.9 Admin Dashboard (For Platform Management)
+• User Management:
+o View, approve, suspend, or delete registered Free & Paid Members.
+• Referral Management:
+o View referral hierarchy and total referral numbers at each level.
+o Manually reassign Free or Paid Users to different Paid Members.
+• Withdrawal Management:
+o View, approve/reject withdrawal requests.
+o Enter withdrawal amounts, select payment method, and mark "Payment Processed".
+• Comprehensive reporting: Referral bonuses, earnings, and transaction history.
+
+3. Technical Architecture & System Requirements
+
+3.1 Technology Stack
+• Frontend: Next.js (React Framework)
+• Styling: Tailwind CSS
+• Backend: Next.js API Routes (Server-side Logic)
+• Database: MongoDB
+• Authentication: Next/Auth (Secure authentication)
+• Payment Gateway: Integrated Merchant Gateway (Razorpay, PayPal, Stripe)
+• Hosting: Hostinger KVM4
+• SSL Encryption: Enabled (HTTPS) 
+
+4. Future Enhancements (Phase 2)
+• 4.1 QR Code Validation:
+o Shopping Card with secure QR verification by partner shops.
+• 4.2 Interactive Earnings Calculator:
+o Users can calculate potential referral earnings interactively.
+• 4.3 Membership Benefits Expansion:
+o Complete list and search functionality for partnered shops.
+• 4.4 Automated Withdrawal Processing:
+o Faster and automated withdrawal transactions for users.
+• 4.5 Referral Gamification:
+o Leaderboards, badges, and reward system for top referrers.
+
+5. Summary – Features Included in MVP 1.0 (First Deployment)
+• OTP-based User Registration/Login (Phone & Email optional later)
+• Paid Membership (₹3,200, referral activation & discounts)
+• Referral System (Unlimited direct referrals)
+• Shopping Card (Digital badge displaying Member ID, Name, Phone)
+• Earnings Withdrawal (Min ₹500, Admin-approved via Bank Transfer & PhonePe)
+• Payment and Transaction History visibility
+• Vendor Partnership Page
+• Admin Dashboard with full control for user mapping & withdrawals 
